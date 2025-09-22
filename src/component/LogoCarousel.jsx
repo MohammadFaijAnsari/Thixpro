@@ -5,7 +5,6 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-// Sample logos array
 const logos = [
   "https://alone7.beplusthemes.com/wp-content/uploads/2020/10/pmr-logo-1.png",
   "https://alone7.beplusthemes.com/wp-content/uploads/2020/10/pmr-logo-2.png",
@@ -16,37 +15,54 @@ const logos = [
 
 export default function LogoCarousel() {
   return (
-    <section className="py-12 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 text-gray-800">
-          Our Partners
+    <section className="py-12 bg-gray-50 relative">
+      <div className="container mx-auto px-6">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 text-blue-900">
+          Our <span className="text-green-600">Partners</span>
         </h2>
 
         <Swiper
           modules={[Autoplay, Navigation]}
-          spaceBetween={30}
+          spaceBetween={20}
           slidesPerView={2}
           loop={true}
-          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
           navigation={true}
           breakpoints={{
             640: { slidesPerView: 2, spaceBetween: 20 },
-            768: { slidesPerView: 4, spaceBetween: 30 },
+            768: { slidesPerView: 3, spaceBetween: 25 },
             1024: { slidesPerView: 5, spaceBetween: 30 },
           }}
+          className="!pb-10"
         >
           {logos.map((logo, index) => (
             <SwiperSlide key={index}>
-              <div className="flex items-center justify-center p-4 ">
                 <img
                   src={logo}
                   alt={`Logo ${index + 1}`}
-                  className="h-16 sm:h-20 object-contain"
+                  className="h-16 sm:h-20 object-contain transition duration-500"
                 />
-              </div>
+              
             </SwiperSlide>
           ))}
         </Swiper>
+        <style jsx global>{`
+         .swiper-button-next,
+         .swiper-button-prev {
+           color: #fff !important;           
+           background-color: #16a34a;        
+           border-radius: 9999px;            
+           padding: 12px;                    
+           z-index: 50;
+         }
+
+         .swiper-button-next::after,
+         .swiper-button-prev::after {
+           font-size: 18px;
+           font-weight: bold;
+         }
+`}</style>
+
       </div>
     </section>
   );

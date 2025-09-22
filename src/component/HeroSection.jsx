@@ -9,12 +9,9 @@ export default function HeroSection() {
                 backgroundPosition: "center",
             }}
         >
-
-            {/* Background overlay */}
             <div className="absolute inset-0 bg-[#002966c4]"></div>
 
             <div className="max-w-5xl mx-auto px-4 grid md:grid-cols-2 items-center gap-10 relative z-10">
-                {/* Left Content */}
                 <div className="animate-fadeIn">
                     <h3 className="text-xl font-semibold text-yellow-400 mb-2">
                         Building a Better World
@@ -29,8 +26,6 @@ export default function HeroSection() {
                         Difference.
                     </p>
                 </div>
-
-                {/* Right Content (Button) */}
                 <div className="flex justify-center md:justify-start ml-40">
                     <a
                         href="#donateform2"

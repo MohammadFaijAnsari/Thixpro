@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function DonationForm() {
   const [showForm, setShowForm] = useState(false);
-  const [amount, setAmount] = useState(500); // Default ₹500
+  const [amount, setAmount] = useState(500); 
   const [custom, setCustom] = useState("");
 
   const donationLevels = [
@@ -41,7 +41,6 @@ export default function DonationForm() {
           </div>
         </div>
 
-        {/* RIGHT SECTION */}
         <div className="bg-yellow-100 p-8">
           <h3 className="text-sm font-semibold text-gray-700">Please Select</h3>
           <h2 className="text-2xl font-bold text-green-900">

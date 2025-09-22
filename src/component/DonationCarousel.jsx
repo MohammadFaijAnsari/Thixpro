@@ -109,20 +109,23 @@ export default function DonationCarousel() {
             );
           })}
         </Swiper>
-
-        {/* Custom Arrows */}
         <button
           ref={prevRef}
-          className="absolute left-10 top-1/2 -translate-y-1/2 bg-green-600 p-2 rounded-full shadow-md hover:bg-green-700 hover:cursor-pointer z-10"
+          className="absolute top-1/2 -translate-y-1/2 left-8 sm:left-6 md:left-10 
+             bg-green-600 p-3 rounded-full shadow-md  
+             hover:cursor-pointer z-10 "
         >
           <ChevronLeft className="text-white w-6 h-6" />
         </button>
         <button
           ref={nextRef}
-          className="absolute right-10 top-1/2 -translate-y-1/2 bg-green-600 p-2 rounded-full shadow-md hover:bg-green-700 hover:cursor-pointer z-10"
+          className="absolute top-1/2 -translate-y-1/2 right-8 sm:right-4 md:right-10 
+             bg-green-600 p-3 rounded-full shadow-md 
+             hover:cursor-pointer z-10"
         >
           <ChevronRight className="text-white w-6 h-6" />
         </button>
+
       </div>
     </div>
   );

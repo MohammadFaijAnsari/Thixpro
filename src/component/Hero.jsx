@@ -13,7 +13,6 @@ export default function Hero() {
 
   return (
     <section className="relative h-[90vh] w-full overflow-hidden z-[-10]">
-      {/* ✅ Background Image Swiper */}
       <Swiper
         modules={[Autoplay, EffectFade]}
         effect="fade"
@@ -24,7 +23,7 @@ export default function Hero() {
         {images.map((img, index) => (
           <SwiperSlide key={index}>
             <div
-              className="w-full h-full bg-cover bg-center"
+              className="w-full h-full bg-center min-h-fit"
               style={{ backgroundImage: `url(${img})` }}
             ></div>
           </SwiperSlide>

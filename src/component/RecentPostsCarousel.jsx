@@ -72,7 +72,6 @@ export default function RecentPostsCarousel() {
                     <a href={post.link}>{post.title}</a>
                   </h3>
                   <a
-                    // href={post.link}
                     className="text-blue-600 hover:underline font-medium text-sm"
                   >
                     Read More →

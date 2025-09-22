@@ -29,7 +29,7 @@ export default function DonationSection() {
         </p>
         <a
           href="#donateform2"
-          className="inline-block bg-blue-900 text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-800 transition"
+          className="inline-block bg-blue-800 text-white font-semibold px-6 py-4  "
         >
           Donate Now
         </a>

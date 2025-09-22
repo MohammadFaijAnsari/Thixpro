@@ -47,7 +47,6 @@ export default function DonateWithUs() {
           </button>
         </div>
 
-        {/* Volunteers */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
             <h3 className="text-xl font-semibold">We Help Thousand Of Peoples</h3>
